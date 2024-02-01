@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 15</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <section>
+        <form autocomplete="off" onsubmit="onSubmit(event)">
+            <div class="operation_container">
+                <label for="operation">Tipo de operacion</label>
+                <select name="operation" id="operation" required>
+                    <option value="ADD">suma</option>
+                    <option value="SUB">resta</option>
+                    <option value="MULT">multiplicacion</option>
+                    <option value="DIV">division</option>
+                </select>
+            </div>
+
+            <div class="numbers_container">
+                <label for="fstNumber">Primer numero</label>
+                <input name="fstNumber" id="fstNumber" type="number" required>
+        
+                <label for="secNumber">Segundo numero</label>
+                <input name="secNumber" id="secNumber" type="number" required>
+            </div>
+
+            <div class="result_container">
+                <label for="result">Resultado</label>
+                <input name="result" id="result" type="number" disabled>
+            </div>
+    
+            <button>calcular!</button>
+        </form>
+
+    </section>
+    <script src="./functions.js"></script>
+</body>
+</html>
